@@ -8,8 +8,8 @@ import medizin.client.managed.request.McProxy;
 import medizin.client.managed.request.PersonProxy;
 
 import com.google.gwt.place.shared.Place;
-import com.google.gwt.requestfactory.client.RequestFactoryEditorDriver;
 import com.google.gwt.user.client.ui.IsWidget;
+import com.google.web.bindery.requestfactory.gwt.client.RequestFactoryEditorDriver;
 
 public interface AssesmentEditView extends IsWidget {
     void setName(String helloName);

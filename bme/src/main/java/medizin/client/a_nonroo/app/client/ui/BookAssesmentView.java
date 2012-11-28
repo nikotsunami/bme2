@@ -1,7 +1,7 @@
 package medizin.client.a_nonroo.app.client.ui;
 
 import com.google.gwt.place.shared.Place;
-import com.google.gwt.requestfactory.shared.EntityProxyId;
+import com.google.web.bindery.requestfactory.shared.EntityProxyId;
 import com.google.gwt.user.client.ui.AcceptsOneWidget;
 import com.google.gwt.user.client.ui.IsWidget;
 

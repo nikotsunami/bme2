@@ -20,8 +20,6 @@ import medizin.client.a_nonroo.app.place.PlaceSystemOverview;
 import medizin.client.a_nonroo.app.place.PlaceUser;
 import medizin.client.a_nonroo.app.place.PlaceUserDetails;
 import medizin.client.a_nonroo.app.place.PlaceQuestiontypesDetails;
-import medizin.client.scaffold.place.ProxyListPlace;
-import medizin.client.scaffold.place.ProxyPlace;
 
 import com.allen_sauer.gwt.log.client.Log;
 import com.google.gwt.activity.shared.FilteredActivityMapper;
@@ -117,29 +115,5 @@ public class FilterForMainPlaces implements FilteredActivityMapper.Filter {
 	           
 		 
 		 return null;
-	}
-
-	/**
-	 * @param place a place to process
-	 * @return an appropriate ProxyListPlace, or null if the given place has
-	 *         nothing to do with proxies
-	 */
-	public ProxyListPlace proxyListPlaceFor(Place place) {
-		
-		
-		
-		
-		
-		
-		if (place instanceof ProxyListPlace) {
-			return (ProxyListPlace) place;
-		}
-
-		if (!(place instanceof ProxyPlace)) {
-			return null;
-		}
-
-		ProxyPlace proxyPlace = (ProxyPlace) place;
-		return new ProxyListPlace(proxyPlace.getProxyClass());
 	}
 }

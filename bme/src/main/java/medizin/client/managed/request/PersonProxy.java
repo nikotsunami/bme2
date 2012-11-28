@@ -21,6 +21,10 @@ public interface PersonProxy extends EntityProxy {
 
     abstract void setPrename(String prename);
 
+    abstract String getShidId();
+
+    abstract void setShidId(String shidId);
+
     abstract String getEmail();
 
     abstract void setEmail(String email);

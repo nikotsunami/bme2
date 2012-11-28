@@ -30,7 +30,7 @@ import com.google.gwt.event.dom.client.ChangeHandler;
 import com.google.gwt.event.dom.client.ClickEvent;
 import com.google.gwt.event.dom.client.KeyUpEvent;
 import com.google.gwt.event.dom.client.KeyUpHandler;
-import com.google.gwt.requestfactory.client.RequestFactoryEditorDriver;
+import com.google.web.bindery.requestfactory.gwt.client.RequestFactoryEditorDriver;
 import com.google.gwt.text.shared.AbstractRenderer;
 import com.google.gwt.text.shared.Renderer;
 import com.google.gwt.uibinder.client.UiBinder;
@@ -128,8 +128,6 @@ public class QuestionTypeCountAddDialogboxImpl extends DialogBox implements Ques
 
     @UiField
     IntegerBox questionTypeCount;
-
-
 
     @Override
     public void setQuestionTypesAssignedPickerValues(Collection<QuestionTypeProxy> values) {

@@ -358,7 +358,7 @@ public class ActivityInstitutionEvent extends AbstractActivityWrapper implements
 		QuestionEventProxy questionEvent = request.create(QuestionEventProxy.class);
 		questionEvent.setEventName(eventName);
 		questionEvent.setInstitution(institution);
-		questionEvent.setVersion(0);
+//		questionEvent.setVersion(0);
 
 		request.persist().using(questionEvent).fire(new Receiver<Void>() {
 

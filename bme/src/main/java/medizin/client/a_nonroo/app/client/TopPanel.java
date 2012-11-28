@@ -21,6 +21,7 @@ import com.google.gwt.user.client.ui.Composite;
 import com.google.gwt.user.client.ui.ValueListBox;
 import com.google.gwt.user.client.ui.Widget;
 import com.google.inject.Inject;
+import com.google.web.bindery.requestfactory.gwt.ui.client.EntityProxyKeyProvider;
 
 /**
  * The TopPanel contains the users login information and a list box to select the institution. 
@@ -44,10 +45,10 @@ public class TopPanel extends Composite {
     }
     
     @UiField(provided = true)
-    ValueListBox<InstitutionProxy> institutionListBox = new ValueListBox<InstitutionProxy>(medizin.client.managed.ui.InstitutionProxyRenderer.instance(), new com.google.gwt.requestfactory.ui.client.EntityProxyKeyProvider<medizin.client.managed.request.InstitutionProxy>());
+    ValueListBox<InstitutionProxy> institutionListBox = new ValueListBox<InstitutionProxy>(medizin.client.managed.ui.InstitutionProxyRenderer.instance(), new EntityProxyKeyProvider<medizin.client.managed.request.InstitutionProxy>());
 
     @UiField(provided = true)
-    ValueListBox<PersonProxy> loggedUser = new ValueListBox<PersonProxy>(medizin.client.managed.ui.PersonProxyRenderer.instance(), new com.google.gwt.requestfactory.ui.client.EntityProxyKeyProvider<medizin.client.managed.request.PersonProxy>());
+    ValueListBox<PersonProxy> loggedUser = new ValueListBox<PersonProxy>(medizin.client.managed.ui.PersonProxyRenderer.instance(), new EntityProxyKeyProvider<medizin.client.managed.request.PersonProxy>());
 
     @UiHandler ("loggedUser")
     public void loginUser(ValueChangeEvent<PersonProxy> event){

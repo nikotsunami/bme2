@@ -9,7 +9,8 @@ import medizin.client.managed.request.QuestionSumPerPersonProxy;
 import com.google.gwt.core.client.GWT;
 import com.google.gwt.editor.client.Editor;
 import com.google.gwt.event.dom.client.ClickEvent;
-import com.google.gwt.requestfactory.client.RequestFactoryEditorDriver;
+import com.google.web.bindery.requestfactory.gwt.client.RequestFactoryEditorDriver;
+import com.google.web.bindery.requestfactory.gwt.ui.client.EntityProxyKeyProvider;
 import com.google.gwt.uibinder.client.UiBinder;
 import com.google.gwt.uibinder.client.UiField;
 import com.google.gwt.uibinder.client.UiHandler;
@@ -85,10 +86,10 @@ public class QuestionSumPerPersonDialogboxImpl extends DialogBox implements Ques
 	}
 	
     @UiField(provided = true)
-    ValueListBox<PersonProxy> responsiblePerson = new ValueListBox<PersonProxy>(medizin.client.managed.ui.PersonProxyRenderer.instance(), new com.google.gwt.requestfactory.ui.client.EntityProxyKeyProvider<medizin.client.managed.request.PersonProxy>());
+    ValueListBox<PersonProxy> responsiblePerson = new ValueListBox<PersonProxy>(medizin.client.managed.ui.PersonProxyRenderer.instance(), new EntityProxyKeyProvider<medizin.client.managed.request.PersonProxy>());
 
     @UiField(provided = true)
-    ValueListBox<QuestionEventProxy> questionEvent = new ValueListBox<QuestionEventProxy>(medizin.client.managed.ui.QuestionEventProxyRenderer.instance(), new com.google.gwt.requestfactory.ui.client.EntityProxyKeyProvider<medizin.client.managed.request.QuestionEventProxy>());
+    ValueListBox<QuestionEventProxy> questionEvent = new ValueListBox<QuestionEventProxy>(medizin.client.managed.ui.QuestionEventProxyRenderer.instance(), new EntityProxyKeyProvider<medizin.client.managed.request.QuestionEventProxy>());
 
 
     @UiField

@@ -354,7 +354,7 @@ public class ActivityInstitution extends AbstractActivityWrapper implements
 		InstitutionRequest request = requests.institutionRequest();
 		InstitutionProxy institution = request.create(InstitutionProxy.class);
 		institution.setInstitutionName(institutionName);
-		institution.setVersion(0);
+//		institution.setVersion(0);
 
 		request.persist().using(institution).fire(new Receiver<Void>() {
 

@@ -18,7 +18,7 @@
 	<!-- Other module inherits                                      -->
 
 	<!-- Specify the app entry point class.                         -->
-	<entry-point class="medizin.client.AppEntryPoint"/>
+	<entry-point class="medizin.client.a_nonroo.app.ApplicationEntry"/>
 
 	<!-- Specify the paths for translatable code                    -->
 	<source path="medizin/client/managed/request"/>

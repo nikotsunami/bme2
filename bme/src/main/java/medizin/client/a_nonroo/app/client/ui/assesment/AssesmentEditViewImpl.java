@@ -9,7 +9,6 @@ import medizin.client.managed.request.AssesmentProxy;
 import medizin.client.managed.request.McProxy;
 import medizin.client.managed.request.PersonProxy;
 import medizin.client.managed.request.PersonRequest;
-import medizin.client.managed.ui.AnswerEditView;
 import medizin.client.managed.ui.QuestionAccessSetEditor;
 
 
@@ -19,9 +18,6 @@ import com.google.gwt.dom.client.Element;
 import com.google.gwt.dom.client.Style.Display;
 import com.google.gwt.editor.client.Editor;
 import com.google.gwt.event.dom.client.ClickEvent;
-import com.google.gwt.requestfactory.client.RequestFactoryEditorDriver;
-import com.google.gwt.requestfactory.shared.Receiver;
-import com.google.gwt.requestfactory.shared.ServerFailure;
 import com.google.gwt.uibinder.client.UiBinder;
 import com.google.gwt.uibinder.client.UiField;
 import com.google.gwt.uibinder.client.UiHandler;
@@ -33,6 +29,8 @@ import com.google.gwt.user.client.ui.TextBox;
 import com.google.gwt.user.client.ui.ValueListBox;
 import com.google.gwt.user.client.ui.Widget;
 import com.google.gwt.user.datepicker.client.DateBox;
+import com.google.web.bindery.requestfactory.gwt.client.RequestFactoryEditorDriver;
+import com.google.web.bindery.requestfactory.gwt.ui.client.EntityProxyKeyProvider;
 
 public class AssesmentEditViewImpl extends Composite implements AssesmentEditView, Editor<AssesmentProxy>  {
 
@@ -95,10 +93,10 @@ public class AssesmentEditViewImpl extends Composite implements AssesmentEditVie
 
 
     @UiField(provided = true)
-    ValueListBox<McProxy> mc = new ValueListBox<McProxy>(medizin.client.managed.ui.McProxyRenderer.instance(), new com.google.gwt.requestfactory.ui.client.EntityProxyKeyProvider<medizin.client.managed.request.McProxy>());
+    ValueListBox<McProxy> mc = new ValueListBox<McProxy>(medizin.client.managed.ui.McProxyRenderer.instance(), new EntityProxyKeyProvider<medizin.client.managed.request.McProxy>());
 
     @UiField(provided = true)
-    ValueListBox<AssesmentProxy> repeFor = new ValueListBox<AssesmentProxy>(medizin.client.managed.ui.AssesmentProxyRenderer.instance(), new com.google.gwt.requestfactory.ui.client.EntityProxyKeyProvider<medizin.client.managed.request.AssesmentProxy>());
+    ValueListBox<AssesmentProxy> repeFor = new ValueListBox<AssesmentProxy>(medizin.client.managed.ui.AssesmentProxyRenderer.instance(), new EntityProxyKeyProvider<medizin.client.managed.request.AssesmentProxy>());
 
     @UiField
     IntegerBox percentSameQuestion;

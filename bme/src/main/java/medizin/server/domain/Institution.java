@@ -19,13 +19,11 @@ public class Institution {
     @Column(unique = true)
     @Size(min = 3, max = 60)
     private String institutionName;
-    
   
     public void mySetCurrentInstitution(){
     	HttpSession session = RequestFactoryServlet.getThreadLocalRequest().getSession();
 		session.setAttribute("institutionId", this.getId());
     }
-    
 
     public static Institution myGetInstitutionToWorkWith(){
     	HttpSession session = RequestFactoryServlet.getThreadLocalRequest().getSession();

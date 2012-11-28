@@ -28,5 +28,9 @@ public interface QuestionSumPerPersonProxy extends EntityProxy {
 
     abstract void setQuestionSum(Integer questionSum);
 
+    abstract Integer getSort_order();
+
+    abstract void setSort_order(Integer sort_order);
+
     abstract Integer getVersion();
 }

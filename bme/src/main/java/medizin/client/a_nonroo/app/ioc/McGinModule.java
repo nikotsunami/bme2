@@ -43,8 +43,7 @@ public class McGinModule extends AbstractGinModule {
 		@Inject
 		public RequestFactoryProvider(EventBus eventBus) {
 			requestFactory = GWT.create(McAppRequestFactory.class);
-			requestFactory.initialize(eventBus, new medizin.client.scaffold.request.EventSourceRequestTransport(
-					eventBus));
+			requestFactory.initialize(eventBus, new medizin.client.scaffold.request.EventSourceRequestTransport(eventBus));
 		}
 
 		public McAppRequestFactory get() {

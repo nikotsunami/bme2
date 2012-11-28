@@ -9,11 +9,10 @@ import medizin.client.managed.request.QuestionSumPerPersonProxy;
 import medizin.client.managed.request.QuestionSumPerPersonProxy;
 
 import com.google.gwt.place.shared.Place;
-import com.google.gwt.requestfactory.client.RequestFactoryEditorDriver;
-import com.google.gwt.user.cellview.client.CellTable;
 import com.google.gwt.user.client.ui.IsWidget;
 import com.google.gwt.user.client.ui.ListBox;
 import com.google.gwt.user.client.ui.SimplePanel;
+import com.google.web.bindery.requestfactory.gwt.client.RequestFactoryEditorDriver;
 
 public interface QuestionSumPerPersonDialogbox extends IsWidget {
  

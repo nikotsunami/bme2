@@ -1001,7 +1001,7 @@ public class ActivityUserDetails extends AbstractActivityWrapper implements User
 		eventAccess.setAccRights(rights);
 		eventAccess.setPerson(person);
 		eventAccess.setQuestionEvent(questionEvent);
-		eventAccess.setVersion(0);
+//		eventAccess.setVersion(0);
 		
 		request.fire(new Receiver<Void>() {
 			
@@ -1141,7 +1141,7 @@ public class ActivityUserDetails extends AbstractActivityWrapper implements User
 			eventAccess.setAccRights(rights);
 			eventAccess.setPerson(person);
 			eventAccess.setQuestion(question);
-			eventAccess.setVersion(0);
+//			eventAccess.setVersion(0);
 			
 			request.fire(new Receiver<Void>() {
 				

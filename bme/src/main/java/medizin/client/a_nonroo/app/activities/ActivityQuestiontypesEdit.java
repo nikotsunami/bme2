@@ -43,7 +43,7 @@
 //import com.google.gwt.place.shared.Place;
 //import com.google.gwt.place.shared.PlaceChangeEvent;
 //import com.google.gwt.place.shared.PlaceController;
-//import com.google.gwt.requestfactory.shared.EntityProxyId;
+//import com.google.web.bindery.requestfactory.shared.EntityProxyId;
 //import com.google.gwt.requestfactory.shared.Receiver;
 //import com.google.gwt.requestfactory.shared.Request;
 //import com.google.gwt.requestfactory.shared.RequestContext;
