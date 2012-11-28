@@ -77,7 +77,7 @@
     
     <servlet>
         <servlet-name>requestFactory</servlet-name>
-        <servlet-class>medizin.server.CustomRequestFactoryServlet</servlet-class>
+        <servlet-class>com.google.web.bindery.requestfactory.server.RequestFactoryServlet</servlet-class>
     </servlet>
     <servlet-mapping>
         <servlet-name>bme</servlet-name>
@@ -94,7 +94,14 @@
         <session-timeout>10</session-timeout>
     </session-config>
     
-    
+    <servlet>
+  <servlet-name>remoteLoggerServiceImpl</servlet-name>
+  <servlet-class>com.allen_sauer.gwt.log.server.RemoteLoggerServiceImpl</servlet-class>
+</servlet>
+<servlet-mapping>
+  <servlet-name>remoteLoggerServiceImpl</servlet-name>
+  <url-pattern>/applicationEntry/gwt-log</url-pattern>
+</servlet-mapping>
     
     
 </web-app>

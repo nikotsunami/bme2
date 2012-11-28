@@ -24,10 +24,17 @@
 	<!-- <inherits name='com.google.gwt.user.theme.dark.Dark'/>     -->
 
 	<!-- Other module inherits                                      -->
+	
+	<!-- For development a default of `DEBUG` is recommended -->
+	<inherits name="com.allen_sauer.gwt.log.gwt-log-DEBUG" />
+	<set-property name="log_DivLogger" value="DISABLED" />
+
+	<!-- Inherit gwt-dnd support -->
+	<inherits name='com.allen_sauer.gwt.dnd.gwt-dnd' />
 
 	<!-- Specify the app entry point class.                         -->
 	<entry-point class="medizin.client.a_nonroo.app.ApplicationEntry"/>
-
+	
 	<!-- Specify the paths for translatable code                    -->
 	<source path="medizin/client/managed/request"/>
     <source path="client"/>

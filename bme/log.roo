@@ -125,3 +125,5 @@ web gwt setup
 web gwt proxy request all --package medizin.client.managed.request
 // Spring Roo 1.2.2.RELEASE [rev 7d75659] log closed at 2012-11-28 18:05:40
 // Spring Roo 1.2.2.RELEASE [rev 7d75659] log opened at 2012-11-28 18:05:48
+// Spring Roo 1.2.2.RELEASE [rev 7d75659] log closed at 2012-11-28 18:32:29
+// Spring Roo 1.2.2.RELEASE [rev 7d75659] log opened at 2012-11-28 18:33:17
