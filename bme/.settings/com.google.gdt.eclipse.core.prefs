@@ -1,5 +1,6 @@
 eclipse.preferences.version=1
 jarsExcludedFromWebInfLib=
 lastWarOutDir=/Users/kohlda00/git/bme2/bme/target/bme-0.1.0.BUILD-SNAPSHOT
+launchConfigExternalUrlPrefix=
 warSrcDir=src/main/webapp
 warSrcDirIsOutput=false
