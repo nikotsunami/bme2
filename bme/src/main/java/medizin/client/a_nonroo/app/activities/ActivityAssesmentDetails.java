@@ -26,11 +26,6 @@ import medizin.client.a_nonroo.app.client.ui.assesment.QuestionTypeCountView;
 import medizin.client.a_nonroo.app.client.ui.assesment.QuestionTypeCountViewImpl;
 import medizin.client.a_nonroo.app.client.ui.user.EventAccessDialogboxImpl;
 
-
-
-
-
-
 import medizin.client.a_nonroo.app.place.PlaceInstitutionEvent;
 import medizin.client.a_nonroo.app.place.PlaceAssesment;
 import medizin.client.a_nonroo.app.place.PlaceAssesmentDetails;
@@ -56,8 +51,6 @@ import medizin.client.managed.request.QuestionEventRequest;
 import medizin.client.shared.AccessRights;
 import medizin.shared.scaffold.QuestionTypeCountPerExamRequestNonRoo;
 
-
-
 import com.allen_sauer.gwt.log.client.Log;
 import com.google.gwt.activity.shared.AbstractActivity;
 import com.google.gwt.activity.shared.Activity;
@@ -68,13 +61,14 @@ import com.google.gwt.event.shared.HandlerRegistration;
 import com.google.gwt.place.shared.Place;
 import com.google.gwt.place.shared.PlaceChangeEvent;
 import com.google.gwt.place.shared.PlaceController;
-import com.google.gwt.requestfactory.client.RequestFactoryEditorDriver;
-import com.google.gwt.requestfactory.shared.EntityProxyId;
-import com.google.gwt.requestfactory.shared.Receiver;
-import com.google.gwt.requestfactory.shared.Request;
-import com.google.gwt.requestfactory.shared.RequestContext;
-import com.google.gwt.requestfactory.shared.ServerFailure;
-import com.google.gwt.requestfactory.shared.Violation;
+
+import com.google.web.bindery.requestfactory.gwt.client.RequestFactoryEditorDriver;
+import com.google.web.bindery.requestfactory.shared.EntityProxyId;
+import com.google.web.bindery.requestfactory.shared.Receiver;
+import com.google.web.bindery.requestfactory.shared.Request;
+import com.google.web.bindery.requestfactory.shared.RequestContext;
+import com.google.web.bindery.requestfactory.shared.ServerFailure;
+import com.google.web.bindery.requestfactory.shared.Violation;
 
 import com.google.gwt.user.cellview.client.CellTable;
 import com.google.gwt.user.client.ui.AcceptsOneWidget;

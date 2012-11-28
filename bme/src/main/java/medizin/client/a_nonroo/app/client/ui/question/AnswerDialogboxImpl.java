@@ -3,32 +3,26 @@ package medizin.client.a_nonroo.app.client.ui.question;
 import java.util.Collection;
 
 import medizin.client.a_nonroo.app.client.richtext.RichTextToolbar;
-import medizin.client.managed.request.PersonProxy;
-import medizin.client.managed.request.QuestionEventProxy;
 import medizin.client.managed.request.AnswerProxy;
-import medizin.client.managed.request.QuestionProxy;
+import medizin.client.managed.request.PersonProxy;
+import medizin.client.managed.ui.PersonProxyRenderer;
 import medizin.client.shared.Validity;
 
-import com.allen_sauer.gwt.log.client.Log;
 import com.google.gwt.core.client.GWT;
-import com.google.gwt.dom.client.Element;
 import com.google.gwt.editor.client.Editor;
 import com.google.gwt.event.dom.client.ClickEvent;
-import com.google.web.bindery.requestfactory.gwt.client.RequestFactoryEditorDriver;
 import com.google.gwt.text.shared.AbstractRenderer;
 import com.google.gwt.uibinder.client.UiBinder;
 import com.google.gwt.uibinder.client.UiField;
 import com.google.gwt.uibinder.client.UiHandler;
 import com.google.gwt.user.client.ui.Button;
-import com.google.gwt.user.client.ui.CheckBox;
 import com.google.gwt.user.client.ui.DialogBox;
-import com.google.gwt.user.client.ui.IntegerBox;
 import com.google.gwt.user.client.ui.RichTextArea;
 import com.google.gwt.user.client.ui.SimplePanel;
-import com.google.gwt.user.client.ui.TextBox;
 import com.google.gwt.user.client.ui.ValueListBox;
 import com.google.gwt.user.client.ui.Widget;
-import com.google.gwt.user.datepicker.client.DateBox;
+import com.google.web.bindery.requestfactory.gwt.client.RequestFactoryEditorDriver;
+import com.google.web.bindery.requestfactory.gwt.ui.client.EntityProxyKeyProvider;
 
 
 public class AnswerDialogboxImpl extends DialogBox implements AnswerDialogbox, Editor<AnswerProxy> {
@@ -113,7 +107,7 @@ RichTextToolbar toolbar=new RichTextToolbar(answerTextArea);
 
 
 	    @UiField(provided = true)
-	    ValueListBox<PersonProxy> rewiewer = new ValueListBox<PersonProxy>(medizin.client.managed.ui.PersonProxyRenderer.instance(), new com.google.gwt.requestfactory.ui.client.EntityProxyKeyProvider<medizin.client.managed.request.PersonProxy>());
+	    ValueListBox<PersonProxy> rewiewer = new ValueListBox<PersonProxy>(PersonProxyRenderer.instance(), new EntityProxyKeyProvider<PersonProxy>());
 
 
 

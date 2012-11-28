@@ -8,6 +8,7 @@ import medizin.client.a_nonroo.app.client.DeclineEmailPopup;
 import medizin.client.a_nonroo.app.client.DeclineEmailPopupDelagate;
 import medizin.client.a_nonroo.app.client.McAppConstant;
 import medizin.client.managed.request.QuestionProxy;
+import medizin.client.managed.ui.McProxyRenderer;
 
 import com.google.gwt.cell.client.AbstractCell;
 import com.google.gwt.cell.client.ActionCell;
@@ -184,7 +185,7 @@ public class AcceptQuestionViewImpl extends Composite implements AcceptQuestionV
 			    	  // sb.appendHtmlConstant("<tr><td><strong>Themenbereich: </strong></td><td>" + value.getQuestEvent().getEventName() + "</td></tr>");
 			      }
 			      if(value.getMcs()!=null){
-			    	  sb.appendHtmlConstant(getTableRow("Mc:", medizin.client.scaffold.place.CollectionRenderer.of(medizin.client.managed.ui.McProxyRenderer.instance()).render(value.getMcs())));
+			    	  sb.appendHtmlConstant(getTableRow("Mc:", medizin.client.scaffold.place.CollectionRenderer.of(McProxyRenderer.instance()).render(value.getMcs())));
 			    	  
 			      }
 			     

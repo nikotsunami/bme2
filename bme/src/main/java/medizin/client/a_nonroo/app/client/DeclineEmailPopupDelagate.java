@@ -1,6 +1,6 @@
 package medizin.client.a_nonroo.app.client;
 
-import com.google.gwt.requestfactory.shared.EntityProxy;
+import com.google.web.bindery.requestfactory.shared.EntityProxy;
 
 import medizin.client.managed.request.QuestionProxy;
 /**

@@ -1,7 +1,7 @@
 package medizin.client.a_nonroo.app.client.dnd3.ui;
 
 import com.google.gwt.event.dom.client.ClickHandler;
-import com.google.gwt.requestfactory.shared.EntityProxyId;
+import com.google.web.bindery.requestfactory.shared.EntityProxyId;
 import com.google.gwt.user.client.ui.IsWidget;
 import com.google.gwt.user.client.ui.VerticalPanel;
 

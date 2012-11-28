@@ -1,8 +1,8 @@
 package medizin.client.a_nonroo.app.client.dnd3.ui;
 
-import com.google.gwt.requestfactory.shared.EntityProxyId;
 import com.google.gwt.user.client.ui.IsWidget;
 import com.google.gwt.user.client.ui.Label;
+import com.google.web.bindery.requestfactory.shared.EntityProxyId;
 
 import medizin.client.a_nonroo.app.client.dnd3.ui.AnswerView.Delegate;
 import medizin.client.managed.request.AnswerProxy;

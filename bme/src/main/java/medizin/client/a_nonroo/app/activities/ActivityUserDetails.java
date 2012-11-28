@@ -22,11 +22,6 @@ import medizin.client.a_nonroo.app.client.ui.user.QuestionAccessView;
 import medizin.client.a_nonroo.app.client.ui.user.UserDetailsView;
 import medizin.client.a_nonroo.app.client.ui.user.UserDetailsViewImpl;
 
-
-
-
-
-
 import medizin.client.a_nonroo.app.place.PlaceInstitutionEvent;
 import medizin.client.a_nonroo.app.place.PlaceUser;
 import medizin.client.a_nonroo.app.place.PlaceUserDetails;
@@ -55,12 +50,13 @@ import com.google.gwt.event.shared.HandlerRegistration;
 import com.google.gwt.place.shared.Place;
 import com.google.gwt.place.shared.PlaceChangeEvent;
 import com.google.gwt.place.shared.PlaceController;
-import com.google.gwt.requestfactory.shared.EntityProxyId;
-import com.google.gwt.requestfactory.shared.Receiver;
-import com.google.gwt.requestfactory.shared.Request;
-import com.google.gwt.requestfactory.shared.RequestContext;
-import com.google.gwt.requestfactory.shared.ServerFailure;
-import com.google.gwt.requestfactory.shared.Violation;
+import com.google.web.bindery.requestfactory.gwt.client.RequestFactoryEditorDriver;
+import com.google.web.bindery.requestfactory.shared.EntityProxyId;
+import com.google.web.bindery.requestfactory.shared.Receiver;
+import com.google.web.bindery.requestfactory.shared.Request;
+import com.google.web.bindery.requestfactory.shared.RequestContext;
+import com.google.web.bindery.requestfactory.shared.ServerFailure;
+import com.google.web.bindery.requestfactory.shared.Violation;
 import com.google.gwt.user.cellview.client.AbstractHasData;
 import com.google.gwt.user.cellview.client.CellTable;
 import com.google.gwt.user.client.Window;

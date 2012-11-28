@@ -17,7 +17,6 @@ import medizin.client.managed.request.McProxy;
 import medizin.client.managed.request.PersonProxy;
 import medizin.client.managed.request.PersonRequest;
 import medizin.client.managed.request.QuestionTypeProxy;
-import medizin.client.managed.ui.AnswerEditView;
 import medizin.client.managed.ui.AnswerSetEditor;
 import medizin.client.managed.ui.KeywordSetEditor;
 import medizin.client.managed.ui.McSetEditor;
@@ -31,6 +30,7 @@ import com.google.gwt.dom.client.Style.Display;
 import com.google.gwt.editor.client.Editor;
 import com.google.gwt.event.dom.client.ClickEvent;
 import com.google.web.bindery.requestfactory.gwt.client.RequestFactoryEditorDriver;
+import com.google.web.bindery.requestfactory.gwt.ui.client.EntityProxyKeyProvider;
 import com.google.gwt.safehtml.shared.SafeHtml;
 import com.google.gwt.safehtml.shared.SafeHtmlBuilder;
 import com.google.gwt.uibinder.client.UiBinder;
@@ -171,10 +171,10 @@ SimplePanel toolbarPanel;
 //	    DateBox dateChanged;
 
 	    @UiField(provided = true)
-	    ValueListBox<PersonProxy> rewiewer = new ValueListBox<PersonProxy>(medizin.client.managed.ui.PersonProxyRenderer.instance(), new com.google.gwt.requestfactory.ui.client.EntityProxyKeyProvider<medizin.client.managed.request.PersonProxy>());
+	    ValueListBox<PersonProxy> rewiewer = new ValueListBox<PersonProxy>(medizin.client.managed.ui.PersonProxyRenderer.instance(), new EntityProxyKeyProvider<medizin.client.managed.request.PersonProxy>());
 
 	    @UiField(provided = true)
-	    ValueListBox<PersonProxy> autor = new ValueListBox<PersonProxy>(medizin.client.managed.ui.PersonProxyRenderer.instance(), new com.google.gwt.requestfactory.ui.client.EntityProxyKeyProvider<medizin.client.managed.request.PersonProxy>());
+	    ValueListBox<PersonProxy> autor = new ValueListBox<PersonProxy>(medizin.client.managed.ui.PersonProxyRenderer.instance(), new EntityProxyKeyProvider<medizin.client.managed.request.PersonProxy>());
 //
 //	    @UiField  
 //	    RichTextArea questionText;
@@ -184,11 +184,11 @@ SimplePanel toolbarPanel;
 
 
 	    @UiField(provided = true)
-	    ValueListBox<QuestionEventProxy> questEvent = new ValueListBox<QuestionEventProxy>(medizin.client.managed.ui.QuestionEventProxyRenderer.instance(), new com.google.gwt.requestfactory.ui.client.EntityProxyKeyProvider<medizin.client.managed.request.QuestionEventProxy>());
+	    ValueListBox<QuestionEventProxy> questEvent = new ValueListBox<QuestionEventProxy>(medizin.client.managed.ui.QuestionEventProxyRenderer.instance(), new EntityProxyKeyProvider<medizin.client.managed.request.QuestionEventProxy>());
 
 
 	    @UiField(provided = true)
-	    ValueListBox<QuestionTypeProxy> questionType = new ValueListBox<QuestionTypeProxy>(medizin.client.managed.ui.QuestionTypeProxyRenderer.instance(), new com.google.gwt.requestfactory.ui.client.EntityProxyKeyProvider<medizin.client.managed.request.QuestionTypeProxy>());
+	    ValueListBox<QuestionTypeProxy> questionType = new ValueListBox<QuestionTypeProxy>(medizin.client.managed.ui.QuestionTypeProxyRenderer.instance(), new EntityProxyKeyProvider<medizin.client.managed.request.QuestionTypeProxy>());
 
 	    @UiField
 	    McSetEditor mcs;

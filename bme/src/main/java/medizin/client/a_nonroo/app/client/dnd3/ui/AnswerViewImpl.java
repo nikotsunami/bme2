@@ -1,21 +1,16 @@
 package medizin.client.a_nonroo.app.client.dnd3.ui;
 
-
-
-
-import com.google.gwt.requestfactory.shared.EntityProxyId;
-
 import com.google.gwt.user.client.ui.HorizontalPanel;
 import com.google.gwt.user.client.ui.Label;
 
 import medizin.client.a_nonroo.app.client.dnd3.ui.AnswerView;
-
 
 import medizin.client.managed.request.AnswerProxy;
 import medizin.client.managed.request.AnswerToAssQuestionProxy;
 
 
 import com.google.gwt.user.client.ui.Widget;
+import com.google.web.bindery.requestfactory.shared.EntityProxyId;
 /**
  * Implements View for answers in the drag and drop-UI. 
  */

@@ -1,4 +1,5 @@
 eclipse.preferences.version=1
-lastWarOutDir=/Users/kohlda00/Documents/workspace-sts-3.1.0.RELEASE/bme/target/bme-0.1.0.BUILD-SNAPSHOT
+jarsExcludedFromWebInfLib=
+lastWarOutDir=/Users/kohlda00/git/bme2/bme/target/bme-0.1.0.BUILD-SNAPSHOT
 warSrcDir=src/main/webapp
 warSrcDirIsOutput=false
